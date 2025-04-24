@@ -1,0 +1,228 @@
+:root {
+  --primary-color: #0a3d62;
+  --secondary-color: #3498db;
+  --accent-color: #f39c12;
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --dark-bg: #1e272e;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+}
+
+/* 導航欄樣式 */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled .navbar-brand img {
+  height: 35px;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after, .nav-link.active:after {
+  width: 100%;
+}
+
+/* 英雄區塊樣式 */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  background: linear-gradient(135deg, rgba(10, 61, 98, 0.7), rgba(0, 0, 0, 0.6));
+}
+
+.hero-section .text-center {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.hero-section .lead {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+/* 內容區塊樣式 */
+.container {
+  padding: 80px 15px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  bottom: -10px;
+  left: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* 圖片樣式 */
+.img-fluid {
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.img-fluid:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 內容區塊動畫 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 3D 卡片效果 */
+.tilt-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+/* 滾動進度條 */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+  z-index: 9999;
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.3rem;
+  }
+  
+  .container {
+    padding: 50px 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* 粒子背景 */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* 浮動元素 */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 數字計數器 */
+.counter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* 滾動提示 */
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-20px) translateX(-50%); }
+  60% { transform: translateY(-10px) translateX(-50%); }
+}

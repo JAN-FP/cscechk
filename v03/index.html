@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>中國建築工程(香港)有限公司</title>
+  </head>
+  <body>
+    <!-- 粒子背景 -->
+    <div id="particles-js" class="particles-container"></div>
+    
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/site-logo.jpg" alt="公司 Logo" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">主頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">以人為本</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">環境關懷</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">夥伴協作</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">建造香港</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lang-switch" href="#">EN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero 區塊 -->
+    <section class="hero-section d-flex align-items-center justify-content-center">
+      <div class="text-center text-white hero-content">
+        <h1 class="display-3 fw-bold hero-title"></h1>
+        <p class="lead hero-subtitle"></p>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="scroll-text">向下滾動</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 可持續發展理念 -->
+    <div class="container mt-5 px-5 section-container">
+      <div class="row justify-content-center align-items-center text-center"> 
+        <div class="col-md-8">
+          <div class="section-title-container">
+            <h1 class="section-title">可持續發展理念「P.E.A.K」</h1>
+            <div class="title-underline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 以人為本 -->
+    <div class="container mt-5 px-5 section-container content-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-5 order-1 order-md-1 image-container">
+          <div class="image-wrapper">
+            <img src="assets/index_s02.jpg" alt="以人為本" class="img-fluid float-end section-image">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 order-2 order-md-2 content-wrapper">
+          <div class="glass-card">
+            <h1 class="section-title">以人為本<br><span class="section-subtitle">People</span></h1>
+            <p>
+              中建香港致力為員工提供良好的發展空間、擁有完善的培訓體系和具市場競爭力的薪酬福利及激勵制度。我們重視員工的職業成長，幫助他們不斷提升技能和知識，以適應行業的發展和變化。此外，在所有新地盤上，我們推行智能安全系統與措施，為員工創造健康安全的工作環境。<br><br>我們亦積極參與公益活動，以專業知識為社區和環境問題提供解決方案，創造共享價值，讓其他持份者感受到支持和被重視。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 環境關懷 -->
+    <div class="container mt-5 px-5 section-container content-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-7 order-2 order-md-1 content-wrapper">
+          <div class="glass-card">
+            <h1 class="section-title">環境關懷<br><span class="section-subtitle">Environment</span></h1>
+            <p>
+              作為總承建商，我們努力推動低碳建造，設定試點項目，積極應用不同的低碳及創新技術。例如「清潔能源計劃」，我們公開提出三大減碳承諾，全面推動清潔能源應用，率先引入氫能發電技術以及探索全港首個清潔能源施工地盤。<br><br>我們亦透過自主研發的「C-SMART 工程管理數字平台」輔助，有效地管理材料和資源的應用，減少廢棄物和污染物的產生，同時平台有助監控和管理地盤的使用情況，減少資源浪費。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 order-1 order-md-2 image-container">
+          <div class="image-wrapper">
+            <img src="assets/index_s03.jpg" alt="環境關懷" class="img-fluid section-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 夥伴協作 -->
+    <div class="container mt-5 px-5 section-container content-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-5 order-1 order-md-1 image-container">
+          <div class="image-wrapper">
+            <img src="assets/index_s04.jpg" alt="夥伴協作" class="img-fluid float-end section-image">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 order-2 order-md-2 content-wrapper">
+          <div class="glass-card">
+            <h1 class="section-title">夥伴協作<br><span class="section-subtitle">Alliance</span></h1>
+            <p>
+              我們積極與不同的持份者溝通、協調、學習，尋找共同推進業內可持續發展的合作機會、夥伴研發及推廣可持續建材和建築技術，共同營造更加宜居及可持續的建築物。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 建造香港 -->
+    <div class="container mt-5 px-5 section-container content-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-7 order-2 order-md-1 content-wrapper">
+          <div class="glass-card">
+            <h1 class="section-title">建造香港<br><span class="section-subtitle">Key Projects for Hong Kong</span></h1>
+            <p>
+              中建香港持續投資於智慧設施把營運逐步數碼化。我們廣泛應用先進建造技術，例如：建築信息模擬技術(BIM)、「組裝合成」建築法(MiC)、可持續低碳建材及工地電氣化等，致力於建造標誌性的綠色建築，其中包括具有代表性的項目，如將軍澳海水化淡廠、港深創新及科技園等。
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 order-1 order-md-2 image-container">
+          <div class="image-wrapper">
+            <img src="assets/index_s05.jpg" alt="建造香港" class="img-fluid section-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 關於 -->
+    <div class="container mt-5 px-5 mb-5 section-container">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-8">
+          <div class="glass-card">
+            <h1 class="section-title">關於<br><span class="section-subtitle">About</span></h1>
+            <p>中國建築工程（香港）有限公司及其附屬公司於1979 年開始於香港從事建築業務，於成立初期已取得五項最高級別「丙組」認可公共工程承建商資格（俗稱C 級建造牌照），積極競投各類政府工程，包括「樓宇建築」、「海港工程」、「道路與及渠務」、「地盤開拓平整」及「水務工程」工程。至今逾四十年，中建香港業務範圍涵蓋房屋工程、土木工程、基礎工程、機電工程、醫療工程、環境工程及其他建築相關業務。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 頁腳 -->
+    <footer class="footer mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5></h5>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>&copy; 2023 中國建築工程(香港)有限公司. 版權所有.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- 自定義 JavaScript -->
+    <script>
+      // 粒子背景設置
+      document.addEventListener('DOMContentLoaded', function() {
+        tsParticles.load("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            color: {
+              value: "#0a4b78"
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000"
+              },
+              polygon: {
+                nb_sides: 5
+              }
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#0a4b78",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+              }
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "grab"
+              },
+              onclick: {
+                enable: true,
+                mode: "push"
+              },
+              resize: true
+            },
+            modes: {
+              grab: {
+                distance: 140,
+                line_linked: {
+                  opacity: 1
+                }
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4
+              },
+              push: {
+                particles_nb: 4
+              },
+              remove: {
+                particles_nb: 2
+              }
+            }
+          },
+          retina_detect: true
+        });
+      });
+
+      // GSAP 動畫
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hero 區塊動畫
+        gsap.from(".hero-title", {
+          duration: 1.5,
+          y: 50,
+          opacity: 0,
+          ease: "power3.out"
+        });
+        
+        gsap.from(".hero-subtitle", {
+          duration: 1.5,
+          y: 30,
+          opacity: 0,
+          delay: 0.5,
+          ease: "power3.out"
+        });
+        
+        gsap.from(".scroll-indicator", {
+          duration: 1.5,
+          y: 20,
+          opacity: 0,
+          delay: 1,
+          ease: "power3.out"
+        });
+        
+        // 滾動觸發動畫
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // 區塊標題動畫
+        gsap.utils.toArray('.section-title-container').forEach(section => {
+          gsap.from(section, {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+          });
+        });
+        
+        // 內容區塊動畫
+        gsap.utils.toArray('.content-section').forEach(section => {
+          const image = section.querySelector('.image-container');
+          const content = section.querySelector('.content-wrapper');
+          
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top 70%",
+              toggleActions: "play none none none"
+            }
+          });
+          
+          tl.from(image, {
+            x: -50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+          })
+          .from(content, {
+            x: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+          }, "-=0.8");
+        });
+      });
+    </script>
+  </body>
+</html>
