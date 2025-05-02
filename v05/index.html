@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="中國建築工程(香港)有限公司">
+    <meta name="description" content="中國建築工程(香港)有限公司 - 專業建造。我們致力於可持續發展，提供高品質的建築服務。">
     <meta name="keywords" content="中國建築工程,香港建築,可持續發展,建築工程,基礎設施,P.E.A.K">
 
     <!-- Bootstrap CSS -->
@@ -16,34 +16,9 @@
     
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-    
-    <!-- 添加 Three.js 相關樣式 -->
-    <style>
-      .hero-section { 
-        position: relative;
-        overflow: hidden;
-        height: 80vh;
-        min-height: 400px;
-      }
-      .hero-canvas { 
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-      }
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      }
-    </style>
 
     <title>中國建築工程(香港)有限公司</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
   </head>
   <body>
     <!-- Three.js Canvas Container -->
@@ -87,15 +62,113 @@
 
     <!-- Hero 區塊 -->
     <section class="hero-section d-flex align-items-center justify-content-center">
-      <div id="hero-canvas" class="hero-canvas"></div>
-      <div class="hero-content text-center">
+      <div class="hero-cards-container">
+        <div class="card card-p">
+            <div class="row align-items-end">
+                <div class="col-4">
+                  <div class="card-title">P</div>
+                </div>
+                <div class="col-8">
+                  <div class="card-subtitle">以人為本</div>
+                  <div class="card-subtitle">PEOPLE</div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content">
+                <div class="card-stats">
+                    <span class="card-stats-label">人均培訓時數</span>
+                    <span class="number" data-value="9.29">0</span><span class="unit">小時</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">義工時數</span>
+                    <span class="number" data-value="17211">0</span><span class="unit">小時</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">社區投入金額</span>
+                    $<span class="number" data-value="2122214">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-e">
+            <div class="row align-items-end">
+                <div class="col-4">
+                  <div class="card-title">E</div>
+                </div>
+                <div class="col-8">
+                  <div class="card-subtitle">環境健康</div>
+                  <div class="card-subtitle">ENVIRONMENT</div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content">
+                <div class="card-stats">
+                    <span class="card-stats-label">溫室氣體排放密度(範圍 1、2 及 3)</span>
+                    <span class="number" data-value="50.45">0</span><span class="unit">公噸二氧化碳當量/百萬港元</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">無害廢棄物棄置密度</span>
+                    <span class="number" data-value="107.53">0</span><span class="unit">公噸/百萬港元</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">耗水密度</span>
+                    <span class="number" data-value="186.3">0</span><span class="unit">立方米/百萬港元</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-a">
+            <div class="row align-items-end">
+                <div class="col-4">
+                  <div class="card-title">A</div>
+                </div>
+                <div class="col-8">
+                  <div class="card-subtitle">群策協作</div>
+                  <div class="card-subtitle">ALLIANCE</div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content">
+                <div class="card-stats">
+                    <span class="card-stats-label">本地採購比例</span>
+                    <span class="number" data-value="97">0</span><span class="unit">%</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">自行購買的木材中獲得 FSC 認證比率</span>
+                    <span class="number" data-value="100">0</span><span class="unit">% 員工</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-k">
+            <div class="row align-items-end">
+                <div class="col-4">
+                  <div class="card-title">K</div>                  
+                </div>
+                <div class="col-8">
+                  <div class="card-subtitle">建設香港</div>
+                  <div class="card-subtitle">PROJECTS FOR<br>HONG KONG</div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content">
+                <div class="card-stats">
+                    <span class="card-stats-label">BIM 應用</span>
+                    <span class="number" data-value="91">0</span><span class="unit">%項目應用</span>
+                </div>
+                <div class="card-stats">
+                    <span class="card-stats-label">參與綠建環評</span>
+                    <span class="number" data-value="38">0</span><span class="unit">項目</span>
+                </div>
+            </div>
+        </div>
       </div>
     </section>
 
-    <!-- 其餘內容保持不變 -->
+    <!-- 以下是原有內容 -->
     <div class="container mt-5 px-5 peak-section" id="peak" data-aos="fade-up">
       <div class="row justify-content-center align-items-center"> 
-        <h1 class="section-title">可持續發展理念「P.E.A.K」</h1>
+        <h1 class="section-title">2024年度可持續發展表現摘要</h1>
         <div class="row mt-5">
           <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="peak-icon">
@@ -209,11 +282,8 @@
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <!-- Three.js 相關腳本 -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/FontLoader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/geometries/TextGeometry.js"></script>
+    <!-- Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
     <!-- Custom JavaScript -->
     <script>
@@ -236,7 +306,7 @@
         }
       });
       
-      // Three.js 3D background (保留原有的背景效果)
+      // Three.js 3D background
       document.addEventListener('DOMContentLoaded', function() {
         // Scene setup
         const scene = new THREE.Scene();
@@ -291,7 +361,7 @@
         scene.add(ambientLight);
         
         const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        directionalLight.position.set(0, 0, 10);
+        directionalLight.position.set(1, 1, 1);
         scene.add(directionalLight);
         
         // Position camera
@@ -329,172 +399,6 @@
         animate();
       });
       
-      // 為 hero 區域創建 3D 文字
-      document.addEventListener('DOMContentLoaded', function() {
-        // 初始化場景、相機和渲染器
-        const scene = new THREE.Scene();
-        // scene.background = new THREE.Color(0x0a192f);
-        
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(0, 0, 10);
-        
-        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setClearColor(0x0a192f, 0.2); // 第二個參數 0 表示完全透明
-        document.getElementById('hero-canvas').appendChild(renderer.domElement);
-        
-        // 添加燈光
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-        scene.add(ambientLight);
-        
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        directionalLight.position.set(5, 5, 5);
-        scene.add(directionalLight);
-        
-        const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
-        directionalLight2.position.set(-5, -5, 5);
-        scene.add(directionalLight2);
-        
-        // 滑鼠位置追蹤
-        const mouse = {
-            x: 0,
-            y: 0
-        };
-        
-        // 監聽滑鼠移動事件
-        document.addEventListener('mousemove', (event) => {
-            // 將滑鼠座標轉換為標準化座標 (-1 到 1)
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-        });
-        
-        // 加載字體並創建 P.E.A.K 3D 文字
-        const fontLoader = new THREE.FontLoader();
-        fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.132.2/examples/fonts/helvetiker_bold.typeface.json', function(font) {
-            // 根據螢幕寬度計算文字大小
-            let textSize = 2; // 預設大小
-            
-            // 當螢幕寬度小於 768px (平板) 時，縮小文字
-            if (window.innerWidth < 768) {
-                textSize = 1.2;
-            }
-            
-            // 當螢幕寬度小於 480px (手機) 時，進一步縮小文字
-            if (window.innerWidth < 480) {
-                textSize = 0.8;
-            }
-            
-            const textGeometry = new THREE.TextGeometry('P . E . A . K', {
-                font: font,
-                size: textSize,
-                height: textSize * 0.25, // 高度也跟著縮放
-                curveSegments: 12,
-                bevelEnabled: true,
-                bevelThickness: textSize * 0.05,
-                bevelSize: textSize * 0.025,
-                bevelOffset: 0,
-                bevelSegments: 5
-            });
-            
-            // 計算文字的邊界框
-            textGeometry.computeBoundingBox();
-            
-            // 計算文字的中心點
-            const centerX = (textGeometry.boundingBox.max.x + textGeometry.boundingBox.min.x) / 2;
-            const centerY = (textGeometry.boundingBox.max.y + textGeometry.boundingBox.min.y) / 2;
-            const centerZ = (textGeometry.boundingBox.max.z + textGeometry.boundingBox.min.z) / 2;
-            
-            // 將幾何體的頂點移動，使中心點位於原點
-            textGeometry.translate(-centerX, -centerY, -centerZ);
-            
-            // 創建材質
-            const textMaterial = new THREE.MeshPhongMaterial({ 
-                color: 0xd4af37,  // 金色
-                specular: 0x111111,
-                shininess: 30
-            });
-            
-            // 創建網格並添加到場景
-            const textMesh = new THREE.Mesh(textGeometry, textMaterial);
-            
-            scene.add(textMesh);
-            
-            // 將文字網格保存為全局變量以便在動畫循環中使用
-            window.peakText = textMesh;
-        });
-        
-        // 處理視窗大小變化
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            
-            // 當視窗大小變化時，重新創建文字以適應新的尺寸
-            if (window.peakText) {
-                scene.remove(window.peakText);
-                fontLoader.load('https://cdn.jsdelivr.net/npm/three@0.132.2/examples/fonts/helvetiker_bold.typeface.json', function(font) {
-                    // 根據螢幕寬度計算文字大小
-                    let textSize = 2; // 預設大小
-                    
-                    // 當螢幕寬度小於 768px (平板) 時，縮小文字
-                    if (window.innerWidth < 768) {
-                        textSize = 1.2;
-                    }
-                    
-                    // 當螢幕寬度小於 480px (手機) 時，進一步縮小文字
-                    if (window.innerWidth < 480) {
-                        textSize = 0.8;
-                    }
-                    
-                    const textGeometry = new THREE.TextGeometry('P . E . A . K', {
-                        font: font,
-                        size: textSize,
-                        height: textSize * 0.25,
-                        curveSegments: 12,
-                        bevelEnabled: true,
-                        bevelThickness: textSize * 0.05,
-                        bevelSize: textSize * 0.025,
-                        bevelOffset: 0,
-                        bevelSegments: 5
-                    });
-                    
-                    textGeometry.computeBoundingBox();
-                    const centerX = (textGeometry.boundingBox.max.x + textGeometry.boundingBox.min.x) / 2;
-                    const centerY = (textGeometry.boundingBox.max.y + textGeometry.boundingBox.min.y) / 2;
-                    const centerZ = (textGeometry.boundingBox.max.z + textGeometry.boundingBox.min.z) / 2;
-                    textGeometry.translate(-centerX, -centerY, -centerZ);
-                    
-                    const textMaterial = new THREE.MeshPhongMaterial({ 
-                        color: 0xd4af37,
-                        specular: 0x111111,
-                        shininess: 30
-                    });
-                    
-                    const textMesh = new THREE.Mesh(textGeometry, textMaterial);
-                    scene.add(textMesh);
-                    window.peakText = textMesh;
-                });
-            }
-        });
-        
-        // 動畫循環
-        function animate() {
-            requestAnimationFrame(animate);
-            
-            // 如果 P.E.A.K 文字已經加載，則根據滑鼠位置調整旋轉
-            if (window.peakText) {
-                // 平滑過渡到目標旋轉
-                window.peakText.rotation.x += (mouse.y * 0.3 - window.peakText.rotation.x) * 0.05;
-                window.peakText.rotation.y += (mouse.x * 0.3 - window.peakText.rotation.y) * 0.05;
-            }
-            
-            renderer.render(scene, camera);
-        }
-        
-        animate();
-      });
-      
       // Parallax effect for hero section
       document.addEventListener('mousemove', function(e) {
         const heroSection = document.querySelector('.hero-section');
@@ -504,5 +408,7 @@
         heroSection.style.backgroundPosition = `calc(50% + ${moveX}px) calc(50% + ${moveY}px)`;
       });
     </script>
+    <!-- 在body結束標籤前添加 -->
+    <script src="js/animations.js"></script>
   </body>
 </html>

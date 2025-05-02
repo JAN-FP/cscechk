@@ -89,7 +89,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(10, 25, 47, 0.9) 0%, rgba(17, 34, 64, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.5) 0%, rgba(17, 34, 64, 0.3) 100%);
     z-index: 1;
 }
 
@@ -267,4 +267,151 @@ footer {
     .content-section {
         padding: 60px 0;
     }
+}
+
+/* 卡片樣式 - 確保過渡效果生效 */
+.card {
+    width: 280px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+    position: relative;
+    z-index: 20; /* 確保卡片在最上層 */
+    transition: transform 1s ease, box-shadow 1s ease; /* 簡化過渡屬性 */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* 修改hover效果，確保緩慢放大效果 */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    /* 移除這裡的transition，讓它繼承自.card */
+}
+
+.card-p {
+    background-image: url('../assets/pic_p.jpg');
+    background-color: rgba(231, 111, 81, 0.8);
+    background-blend-mode: multiply;
+}
+
+.card-e {
+    background-image: url('../assets/pic_e.jpg');
+    background-color: rgba(0, 128, 128, 0.8);
+    background-blend-mode: multiply;
+}
+
+.card-a {
+    background-image: url('../assets/pic_a.jpg');
+    background-color: rgba(70, 130, 180, 0.8);
+    background-blend-mode: multiply;
+}
+
+.card-k {
+    background-image: url('../assets/pic_k.jpg');
+    background-color: rgba(205, 133, 63, 0.8);
+    background-blend-mode: multiply;
+}
+
+.card-title {
+    font-size: 72px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-subtitle {
+    font-size: 16px;
+    margin-top: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+    margin-top: auto;
+}
+
+.card-stats {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+.card-stats-label {
+    font-size: 12px;
+    opacity: 0.9;
+    display: block;
+}
+
+.number {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 4px;
+    color: #fff;
+}
+
+.unit {
+    font-size: 10px;
+    opacity: 0.9;
+}
+
+.hero-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 10; /* 確保卡片容器在較高層級 */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* 在文件末尾添加以下代碼 */
+
+/* 卡片滑入動畫 */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-up {
+    animation: slideInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+/* 為每張卡片設置不同的延遲時間 */
+.card-p.slide-in-up {
+    animation-delay: 0.1s;
+}
+
+.card-e.slide-in-up {
+    animation-delay: 0.3s;
+}
+
+.card-a.slide-in-up {
+    animation-delay: 0.5s;
+}
+
+.card-k.slide-in-up {
+    animation-delay: 0.7s;
 }
