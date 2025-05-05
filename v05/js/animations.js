@@ -26,7 +26,7 @@ function animateNumber(element, targetValue, duration = 2000) {
             element.textContent = Math.floor(currentValue).toLocaleString();
         } else {
             // 對於小數，保留兩位小數
-            element.textContent = currentValue.toFixed(2);
+            element.textContent = currentValue.toFixed(1);
         }
     }, updateInterval);
 }

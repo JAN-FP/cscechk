@@ -1,0 +1,43 @@
+.animation {
+	height: 100vh;
+	background: #7395f0;
+}
+
+.scene {
+	height: 100%;
+	width: 100%;
+}
+
+.btn {
+	position: fixed;
+	top: 15px;
+	right: 30px;
+	padding: 0;
+	background: transparent;
+	border: none;
+	color: #2d3436;
+	font-size: 2rem;
+	cursor: pointer;
+	
+	&:active,
+	&:focus {
+		text-decoration: underline;
+		border: none;
+		outline: none;
+	}
+}
+
+.hero-section {
+	padding-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .hero-cards-container {
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+	.hero-section {
+		padding-top: 60px;
+	}
+}
