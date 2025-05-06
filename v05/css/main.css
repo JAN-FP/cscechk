@@ -18,6 +18,11 @@ body {
     padding-top: 75px; /* 為固定導航欄留出空間 */
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 /* 2. 導航欄樣式 */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95) !important;
@@ -498,16 +503,16 @@ footer {
 .project-content {
     margin-top: 2rem;
 }
-  
+
 .project-item h4 {
     color: #0066cc;
     margin-bottom: 0.5rem;
 }
-  
+
 .sustainability-list {
     padding-left: 1.5rem;
 }
-  
+
 .sustainability-list li {
     margin-bottom: 0.5rem;
 }
@@ -544,23 +549,23 @@ footer {
 }
 
 @keyframes arrow-move {
-  0% {
+    0% {
     transform: translateX(0);
-  }
-  50% {
+    }
+    50% {
     transform: translateX(5px);
-  }
-  100% {
+    }
+    100% {
     transform: translateX(0);
-  }
+    }
 }
 
 .btn-outline-light .bi-arrow-right {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  animation: arrow-move 1.5s infinite;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    animation: arrow-move 1.5s infinite;
 }
 
 .btn-outline-light:hover .bi-arrow-right {
-  animation: arrow-move 0.8s infinite;
+    animation: arrow-move 0.8s infinite;
 }
