@@ -109,3 +109,16 @@
   color: #64ffda;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+/* 質量管理與商業道德區域動畫相關樣式 */
+.icon-animate {
+  display: inline-block;
+}
+
+.stat-card {
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
