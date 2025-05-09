@@ -79,50 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const particleSystem = new THREE.Points(particles, particleMaterial);
     scene.add(particleSystem);
     
-    // 添加連接線
-    const lineMaterial = new THREE.LineBasicMaterial({
-        color: 0x3498db,  // 科技藍色
-        transparent: true,
-        opacity: 0.3  // 增加不透明度
-    });
-    
-    const lines = [];
-    const maxDistance = 3; // 最大連接距離
-    
-    // 創建連接線
-    function createLines() {
-        // 移除現有的線
-        lines.forEach(line => scene.remove(line));
-        lines.length = 0;
-        
-        const positions = particles.attributes.position.array;
-        
-        for (let i = 0; i < particleCount; i++) {
-            const i3 = i * 3;
-            const p1 = new THREE.Vector3(positions[i3], positions[i3 + 1], positions[i3 + 2]);
-            
-            for (let j = i + 1; j < particleCount; j++) {
-                const j3 = j * 3;
-                const p2 = new THREE.Vector3(positions[j3], positions[j3 + 1], positions[j3 + 2]);
-                
-                const distance = p1.distanceTo(p2);
-                
-                if (distance < maxDistance) {
-                    const lineGeometry = new THREE.BufferGeometry().setFromPoints([p1, p2]);
-                    const line = new THREE.Line(lineGeometry, lineMaterial);
-                    scene.add(line);
-                    lines.push(line);
-                    
-                    // 限制線的數量以提高性能
-                    if (lines.length > 300) return;
-                }
-            }
-        }
-    }
-    
-    // 初始創建連接線
-    createLines();
-    
     // 設置相機位置
     camera.position.z = 20;
     
