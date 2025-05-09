@@ -166,25 +166,25 @@ body {
 
 .card-p {
     background-image: url('../assets/pic_p.jpg');
-    background-color: rgba(44, 62, 80, 0.7);
+    background-color: rgba(44, 62, 80, 0.3);
     background-blend-mode: multiply;
 }
 
 .card-e {
     background-image: url('../assets/pic_e.jpg');
-    background-color: rgba(44, 62, 80, 0.7);
+    background-color: rgba(44, 62, 80, 0.3);
     background-blend-mode: multiply;
 }
 
 .card-a {
     background-image: url('../assets/pic_a.jpg');
-    background-color: rgba(44, 62, 80, 0.7);
+    background-color: rgba(44, 62, 80, 0.3);
     background-blend-mode: multiply;
 }
 
 .card-k {
     background-image: url('../assets/pic_k.jpg');
-    background-color: rgba(44, 62, 80, 0.7);
+    background-color: rgba(44, 62, 80, 0.3);
     background-blend-mode: multiply;
 }
 
