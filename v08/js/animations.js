@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 滾動觸發動畫
 function animateNumbersOnScroll() {
-    const numberElements = document.querySelectorAll('.number');
+    const numberElements = document.querySelectorAll('.counter-number');
     
     // 為每個在視窗中的數字元素添加動畫
     function checkElements() {
@@ -66,7 +66,7 @@ function animateNumbersOnScroll() {
                 element.classList.add('animated');
                 
                 // 獲取目標值
-                const targetValue = parseFloat(element.getAttribute('data-value'));
+                const targetValue = parseFloat(element.getAttribute('data-target'));
                 animateNumber(element, targetValue);
             }
         });

@@ -1,0 +1,16 @@
+.card-title {
+    color: #000000a1;
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem!important;
+    text-shadow:none!important;
+}
+
+.card-text {
+    font-size: 0.7rem !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: auto !important;
+    }
+}
