@@ -8,6 +8,11 @@
     --text-secondary: #bdc3c7;      /* 中灰色 - 次要文字 */
     --white: #ffffff;
     --black: rgba(0, 0, 0, 0.75);
+    /* PEAK */
+    --p-red: #e74c3c; /* 更柔和的紅色 */
+    --e-green: #0a6f6d;
+    --a-blue: #22689b;
+    --k-orange: #eb8022;
 }
 
 body {
@@ -287,7 +292,9 @@ body {
 }
 
 .img-fluid:hover {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px) !important; */
+    transform: scale(1.05) !important;
+    transition: 0.3s ease !important;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -575,4 +582,16 @@ footer {
     color: var(--white);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.data-area-bg {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.no-transform {
+  transform: none!important;
+}
+
+.text-xxxl {
+  font-size: 5rem!important;
 }

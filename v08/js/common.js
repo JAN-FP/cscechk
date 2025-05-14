@@ -17,9 +17,9 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Three.js 流體效果背景
+// Three.js 3D 效果背景
 document.addEventListener('DOMContentLoaded', function() {
-    // 場景設置
+    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
@@ -27,115 +27,86 @@ document.addEventListener('DOMContentLoaded', function() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('canvas-container').appendChild(renderer.domElement);
 
-    // 創建流體粒子系統
-    const particleCount = 1000;
-    const particles = new THREE.BufferGeometry();
-    const positions = new Float32Array(particleCount * 3);
-    const colors = new Float32Array(particleCount * 3);
-    
-    // 主題顏色
-    const themeColors = [
-        new THREE.Color(0x2c3e50),  // 深灰藍色
-        new THREE.Color(0x34495e),  // 稍淺灰藍色
-        new THREE.Color(0x3498db),  // 科技藍
-        new THREE.Color(0xf39c12),  // 暖金色
-        new THREE.Color(0x7f8c8d),  // 水泥灰色
-        new THREE.Color(0x95a5a6)   // 淺水泥灰色
-    ];
-    
-    // 初始化粒子位置和顏色
-    for (let i = 0; i < particleCount; i++) {
-        const i3 = i * 3;
-        
-        // 位置 - 在球體內隨機分佈
-        const radius = 15 * Math.random();
-        const theta = Math.random() * Math.PI * 2;
-        const phi = Math.random() * Math.PI;
-        
-        positions[i3] = radius * Math.sin(phi) * Math.cos(theta);     // x
-        positions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);  // y
-        positions[i3 + 2] = radius * Math.cos(phi);                    // z
-        
-        // 顏色 - 從主題顏色中隨機選擇
-        const color = themeColors[Math.floor(Math.random() * themeColors.length)];
-        colors[i3] = color.r;
-        colors[i3 + 1] = color.g;
-        colors[i3 + 2] = color.b;
+    // Create building-like objects
+    const buildings = [];
+    const buildingCount = 50;
+
+    for (let i = 0; i < buildingCount; i++) {
+        const height = Math.random() * 5 + 1;
+        const width = Math.random() * 0.5 + 0.2;
+        const depth = Math.random() * 0.5 + 0.2;
+
+        const geometry = new THREE.BoxGeometry(width, height, depth);
+
+        // Use colors that match our theme
+        const materials = [
+            new THREE.MeshBasicMaterial({ color: 0x0a192f }),
+            new THREE.MeshBasicMaterial({ color: 0x112240 }),
+            new THREE.MeshBasicMaterial({ color: 0x64ffda }),
+            new THREE.MeshBasicMaterial({ color: 0xd4af37 }),
+            new THREE.MeshBasicMaterial({ color: 0x8892b0 }),
+            new THREE.MeshBasicMaterial({ color: 0xe6f1ff })
+        ];
+
+        const building = new THREE.Mesh(geometry, materials[Math.floor(Math.random() * materials.length)]);
+
+        // Position buildings in a grid-like pattern
+        const gridSize = Math.sqrt(buildingCount) * 2;
+        building.position.x = (Math.random() - 0.5) * gridSize;
+        building.position.y = height / 2 - 2;
+        building.position.z = (Math.random() - 0.5) * gridSize - 5;
+
+        scene.add(building);
+        buildings.push({
+            mesh: building,
+            rotationSpeed: (Math.random() - 0.5) * 0.01,
+            floatSpeed: Math.random() * 0.005 + 0.001,
+            floatDirection: 1,
+            floatAmount: 0,
+            maxFloatAmount: Math.random() * 0.2 + 0.1
+        });
     }
-    
-    particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-    
-    // 粒子材質
-    const particleMaterial = new THREE.PointsMaterial({
-        size: 0.12,  // 稍微增大粒子
-        vertexColors: true,
-        transparent: true,
-        opacity: 0.8,  // 增加不透明度
-        blending: THREE.AdditiveBlending
-    });
-    
-    // 創建粒子系統
-    const particleSystem = new THREE.Points(particles, particleMaterial);
-    scene.add(particleSystem);
-    
-    // 設置相機位置
-    camera.position.z = 20;
-    
-    // 時間變量用於動畫
-    let time = 0;
-    
-    // 動畫循環
+
+    // Add some lights
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
+
+    // Position camera
+    camera.position.z = 10;
+
+    // Animation loop
     function animate() {
         requestAnimationFrame(animate);
-        time += 0.005;
-        
-        // 更新粒子位置 - 流體波浪效果
-        const positions = particles.attributes.position.array;
-        
-        for (let i = 0; i < particleCount; i++) {
-            const i3 = i * 3;
-            
-            // 應用波浪效果
-            positions[i3] += Math.sin(time + positions[i3 + 1] * 0.1) * 0.01;
-            positions[i3 + 1] += Math.cos(time + positions[i3] * 0.1) * 0.01;
-            positions[i3 + 2] += Math.sin(time * 0.5 + positions[i3]) * 0.01;
-            
-            // 保持粒子在範圍內
-            const distance = Math.sqrt(
-                positions[i3] * positions[i3] + 
-                positions[i3 + 1] * positions[i3 + 1] + 
-                positions[i3 + 2] * positions[i3 + 2]
-            );
-            
-            if (distance > 15) {
-                positions[i3] *= 0.99;
-                positions[i3 + 1] *= 0.99;
-                positions[i3 + 2] *= 0.99;
+
+        // Rotate and float buildings
+        buildings.forEach(building => {
+            building.mesh.rotation.y += building.rotationSpeed;
+
+            building.floatAmount += building.floatSpeed * building.floatDirection;
+            if (building.floatAmount > building.maxFloatAmount || building.floatAmount < 0) {
+                building.floatDirection *= -1;
             }
-        }
-        
-        particles.attributes.position.needsUpdate = true;
-        
-        // 每隔一段時間重新創建連接線
-        if (Math.floor(time * 10) % 10 === 0) {
-            createLines();
-        }
-        
-        // 緩慢旋轉整個場景
-        particleSystem.rotation.y += 0.001;
-        particleSystem.rotation.x += 0.0005;
-        
+
+            building.mesh.position.y = building.mesh.position.y + building.floatSpeed * building.floatDirection;
+        });
+
+        // Rotate entire scene slowly
+        scene.rotation.y += 0.001;
+
         renderer.render(scene, camera);
     }
-    
-    // 處理窗口大小變化
+
+    // Handle window resize
     window.addEventListener('resize', function() {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
     });
-    
+
     animate();
 });
 
