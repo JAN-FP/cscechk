@@ -1,0 +1,72 @@
+.peak-section .hero-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.peak-section .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 400px;
+}
+
+.peak-section .card__side {
+  height: 100%;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.peak-section .card__side--front {
+  background-color: transparent !important;
+  color: #333;
+}
+
+.peak-section .card__side--back {
+  background-color: var(--secondary-color);
+  /* color: white; */
+  transform: rotateY(180deg);
+}
+
+.peak-section .card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.peak-section .card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+.card__side--front-1 {
+    background-image: url('../assets/cover_p03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card__side--front-2 {
+    background-image: url('../assets/cover_e03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card__side--front-3 {
+    background-image: url('../assets/cover_a03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card__side--front-4 {
+    background-image: url('../assets/cover_k03.jpg');
+    background-size: cover;
+    background-position: center;
+}

@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hero_3d.css" rel="stylesheet">
+    <link href="css/peak-card.css" rel="stylesheet">
     
     <!-- Framer Motion for animations -->
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
@@ -69,7 +70,7 @@
     <section class="hero-section d-flex align-items-center justify-content-center">
       <div class="container">
         <div class="hero-content text-center">
-          <h1 class="hero-title">2024</h1>
+          <h1 class="hero-title gradient-text">2024</h1>
           <p class="hero-subtitle">可持續發展報告概要</p>
         </div>
       </div>
@@ -78,7 +79,7 @@
     <div class="container mt-5 px-5" id="peak">
       <div class="row justify-content-center align-items-center content-section" data-aos="fade-up">
         <div class="col col-md-10" data-aos="fade-up">
-          <h1 data-aos="fade-right">P.E.A.K 理念</h1>
+          <h1 data-aos="fade-up">P.E.A.K 理念</h1>
           <br>
           <img src="assets/PEAK-GIF-2.gif" alt="P.E.A.K" class="img-fluid float-end" data-aos="zoom-in" style="transform: none !important;">
           <p>
@@ -93,83 +94,65 @@
     <!-- 以下是PEAK-Card內容 -->
     <div class="container mt-5 px-5 peak-section" id="peak" data-aos="fade-up">
       <div class="row justify-content-center align-items-center"> 
-        <div class="hero-cards-container">
-          <div class="card card-p">
-              <div class="row align-items-end">
+        <div class="row hero-cards-container">
+          <div class="col card">
+              <div class="card__side card__side--front card__side--front-1">
+                  <div class="frame">
+                      <p></p>
+                  </div>
               </div>
-              <!-- <hr>
-              <div class="card-content">
-                  <div class="card-stats">
-                      <span class="card-stats-label">人均培訓時數</span>
-                      <span class="number" data-value="8.1">0</span><span class="unit">小時</span>
+              <div class="card__side card__side--back card__side--back-1">
+                  <div class="frame">
+                      <h2>以人為本</h2>
+                      <a href="people.html" class="btn btn-outline-light btn-lg">了解更多 <i class="bi bi-arrow-right"></i></a>
                   </div>
-                  <div class="card-stats">
-                    <span class="card-stats-label">千人工傷率</span>
-                    <span class="number" data-value="0.5">0</span><span class="unit">員工</span>
-                </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">義工參與時數</span>
-                      <span class="number" data-value="4632">0</span><span class="unit">小時</span>
-                  </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">社區投入金額</span>
-                      <span>$</span><span class="number" data-value="75100">0</span>
-                  </div>
-              </div> -->
+              </div>
           </div>
-          <div class="card card-e">
-              <div class="row align-items-end">
+          <div class="col card">
+              <div class="card__side card__side--front card__side--front-2">
+                  <div class="frame">
+                      <p></p>
+                  </div>
               </div>
-              <!-- <hr>
-              <div class="card-content">
-                  <div class="card-stats">
-                      <span class="card-stats-label">溫室氣體排放密度(範圍 1、2 及 3)</span>
-                      <span class="number" data-value="48.9">0</span><span class="unit">公噸二氧化碳當量/百萬港元</span>
+              <div class="card__side card__side--back card__side--back-2">
+                  <div class="frame">
+                      <h2>環境關懷</h2>
+                      <a href="environment.html" class="btn btn-outline-light btn-lg">了解更多 <i class="bi bi-arrow-right"></i></a>
                   </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">無害廢棄物棄置密度</span>
-                      <span class="number" data-value="150">0</span><span class="unit">公噸/百萬港元</span>
-                  </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">耗水密度</span>
-                      <span class="number" data-value="60.2">0</span><span class="unit">立方米/百萬港元</span>
-                  </div>
-              </div> -->
+              </div>
           </div>
-          <div class="card card-a">
-              <div class="row align-items-end">
+          <div class="col card">
+              <div class="card__side card__side--front card__side--front-3">
+                  <div class="frame">
+                      <p></p>
+                  </div>
               </div>
-              <!-- <hr>
-              <div class="card-content">
-                  <div class="card-stats">
-                      <span class="card-stats-label">本地採購比例</span>
-                      <span class="number" data-value="100">0</span><span class="unit">%</span>
+              <div class="card__side card__side--back card__side--back-3">
+                  <div class="frame">
+                      <h2>夥伴協作</h2>
+                      <a href="alliance.html" class="btn btn-outline-light btn-lg">了解更多 <i class="bi bi-arrow-right"></i></a>
                   </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">自行購買的木材中獲得 FSC 認證比率</span>
-                      <span class="number" data-value="100">0</span><span class="unit">%</span>
-                  </div>
-              </div> -->
+              </div>
           </div>
-          <div class="card card-k">
-              <div class="row align-items-end">
+          <div class="col card">
+              <div class="card__side card__side--front card__side--front-4">
+                  <div class="frame">
+                      <p></p>
+                  </div>
               </div>
-              <!-- <hr>
-              <div class="card-content">
-                  <div class="card-stats">
-                      <span class="card-stats-label">BIM 應用</span>
-                      <span class="number" data-value="92">0</span><span class="unit">%項目應用</span>
+              <div class="card__side card__side--back card__side--back-4">
+                  <div class="frame">
+                      <h2>建造香港</h2>
+                      <a href="build.html" class="btn btn-outline-light btn-lg">了解更多 <i class="bi bi-arrow-right"></i></a>
                   </div>
-                  <div class="card-stats">
-                      <span class="card-stats-label">參與綠建環評</span>
-                      <span class="number" data-value="39">0</span><span class="unit">項目</span>
-                  </div>
-              </div> -->
+              </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- 以下是PEAK-Card內容 -->
 
+    
     <div class="container mt-5 px-5" id="people">
       <div class="row justify-content-center align-items-center content-section" data-aos="fade-right">
         <div class="col-12 col-md-4 order-1 order-md-1">
@@ -237,6 +220,7 @@
         </div>
       </div>
     </div>
+    
 
     <div class="container mt-5 px-5" id="about">
       <div class="row justify-content-center align-items-center content-section" data-aos="fade-up">
@@ -298,5 +282,6 @@
       // 觸發自定義事件
       window.dispatchEvent(new Event('framerMotionLoaded'));
     </script>
+
   </body>
 </html>

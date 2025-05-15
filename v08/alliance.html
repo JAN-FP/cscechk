@@ -62,30 +62,47 @@
       </div>
     </nav>
 
-    <!-- Hero 區塊 -->
-    <!-- <section class="hero-section d-flex align-items-center justify-content-center">
-      <div class="hero-cards-container">
-        <div class="network-container" id="network-container"></div>
+    <!-- 夥伴協作 -->
+    <div class="container mt-5 px-5 bento-grid">
+      <div class="row justify-content-center align-items-center mt-5" data-aos="slide-up" data-aos-duration="800">
+        <div class="col-12 col-md-10" data-aos="fade-up">
+          <h1 class="text-center display-1 fw-bold text-uppercase gradient-text" data-aos="zoom-in">夥伴協作</h1>
+        </div>
       </div>
-    </section> -->
+    </div>
 
-    <!-- 夥伴協作主要內容 -->
     <div class="container mt-5 px-5">
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-right">
-        <div class="col-12 col-md-4 order-1 order-md-1">
-          <img src="assets/alliance/page_58_img_1.jpeg" alt="夥伴協作" class="img-fluid float-end" data-aos="zoom-in">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 grid-item-large">
+          <img src="assets/alliance/cover_a.jpg" alt="夥伴協作" class="img-fluid rounded-4" data-aos="fade-right" data-aos-delay="300">
         </div>
-        <div class="col-12 col-md-6 order-2 order-md-2" data-aos="fade-up">
-          <h1>夥伴協作<br>Alliance</h1>
-          <p>
-            我們積極與不同的持份者溝通、協調、學習，尋找共同推進業內可持續發展的合作機會、夥伴研發及推廣可持續建材和建築技術，共同營造更加宜居及可持續的建築物。
-          </p>
-          <p>
-            作為建造業議會工地電氣化和潔淨能源應用的可行性研究工作小組主席，中建香港積極搭建協同平台，與業內機構進行技術交流及分享，構建起開放共贏的可持續建設創新生態圈。
-          </p>
+        <div class="col-md-6">
+          <div class="bg-dark text-white p-5 rounded-4 gradient-bg" data-aos="fade-left" data-aos-delay="300">
+            <div class="row justify-content-center" id="icon-people">
+              <!-- 數據顯示 -->
+              <div class="row text-center">
+                <div class="col-md-6 mb-3 stat-card">
+                  <div class="p-3 rounded h-100 data-area-bg">
+                    <i class="bi bi-bag fs-1 mb-3 text-info icon-animate"></i>
+                    <h4>本地采購比例:</h4>
+                    <p class="fs-2 fw-bold counter-number" data-target="100">0</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 stat-card">
+                  <div class="p-3 rounded h-100 data-area-bg">
+                    <i class="bi bi-award fs-1 mb-3 text-info icon-animate"></i>
+                    <h4>自信購買的木材中獲得FSC認證比率:</h4>
+                    <p class="fs-2 fw-bold counter-number" data-target="100">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
       
+    <div class="container mt-5 px-5">
       <!-- 可持續供應鏈 -->
       <div class="row justify-content-center align-items-center content-section mt-5" data-aos="fade-left">
         <div class="col-12 col-md-6 order-2 order-md-1" data-aos="fade-up">
@@ -181,8 +198,11 @@
 
     <!-- 在body結束標籤前添加 -->
     <script src="js/common.js"></script>
-    <script src="js/animations.js"></script>
+    <script src="js/alliance.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js'></script>
-    <script src="js/gsap_alliance.js"></script>
+    <!-- 添加TextPlugin庫 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js'></script>
+    <!-- 添加ScrollTrigger插件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js'></script>
   </body>
 </html>

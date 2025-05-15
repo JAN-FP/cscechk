@@ -23,6 +23,20 @@ body {
     padding-top: 75px; /* 為固定導航欄留出空間 */
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0.5rem 0;
+}
+
+img {
+    margin: 0 0;
+}
+
 /* 2. 導航欄樣式 */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95) !important;
@@ -165,25 +179,25 @@ body {
 }
 
 .card-p {
-    background-image: url('../assets/pic_p.jpg');
+    background-image: url('../assets/cover_p03.jpg');
     /* background-color: rgba(44, 62, 80, 0.3); */
     background-blend-mode: multiply;
 }
 
 .card-e {
-    background-image: url('../assets/pic_e.jpg');
+    background-image: url('../assets/cover_e03.jpg');
     /* background-color: rgba(44, 62, 80, 0.3); */
     background-blend-mode: multiply;
 }
 
 .card-a {
-    background-image: url('../assets/pic_a.jpg');
+    background-image: url('../assets/cover_a03.jpg');
     /* background-color: rgba(44, 62, 80, 0.3); */
     background-blend-mode: multiply;
 }
 
 .card-k {
-    background-image: url('../assets/pic_k.jpg');
+    background-image: url('../assets/cover_k03.jpg');
     /* background-color: rgba(44, 62, 80, 0.3); */
     background-blend-mode: multiply;
 }
@@ -598,4 +612,17 @@ footer {
 
 .no-transform {
   transform: none!important;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #007bff 20%, #00ffb3 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* 覆盖PEAK-GIF-2.gif颜色样式 */
+#peak img.img-fluid.float-end {
+    filter: hue-rotate(200deg) saturate(0.8) brightness(0.9);
+    /* 说明：通过hue-rotate调整色相，saturate调整饱和度，brightness调整亮度，具体参数可根据实际效果微调 */
 }
