@@ -635,3 +635,12 @@ footer {
     background-clip: text;
     color: transparent;
 }
+
+.peak-gif {
+    margin: 1rem 1rem!important;
+    box-shadow: #ffffff 0px 0px 10px!important;
+}
+
+.peak-gif:hover {
+    transform: none!important;
+}
