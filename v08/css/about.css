@@ -1,12 +1,16 @@
-.card-title {
-    color: #000000a1;
+.about-data .card {
+    --bs-card-bg: var(--secondary-color)!important;
+}
+
+.about-data .card-title {
+    color: #f39c12ab;
     font-size: 1rem !important;
     margin-bottom: 0.5rem!important;
     text-shadow:none!important;
 }
 
-.card-text {
-    font-size: 0.7rem !important;
+.about-data .card-text {
+    font-size: 0.8rem !important;
 }
 
 @media (max-width: 768px) {

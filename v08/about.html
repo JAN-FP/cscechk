@@ -18,12 +18,18 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
     <title>中國建築工程(香港)有限公司 - 關於</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   </head>
   <body>
     <!-- Three.js Canvas Container -->
     <div id="canvas-container"></div>
+    <div class="transparent-bg"></div>
     
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
@@ -62,6 +68,8 @@
       </div>
     </nav>
 
+    
+    
     <!-- Hero 區塊 -->
     <section class="hero-section d-flex align-items-center justify-content-center">
       <div class="hero-cards-container">
@@ -71,7 +79,7 @@
 
     <!-- 留空白位置給填充內容 -->
     <div class="container mt-5 px-5">
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-right">
+      <div class="row justify-content-center align-items-center" data-aos="fade-up">
 
         <div class="col-12 col-md-10 order-2 order-md-2">
           <h1>關於<br>About</h1>
@@ -94,7 +102,7 @@
           </p>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-left">
+      <div class="row justify-content-center align-items-center" data-aos="fade-left">
         <div class="col-12 col-md-10">
           <h3 class="mt-5 mb-4">重點獎項</h3>
           <h4>「環保建築大獎2023」 - 「綠建領導先鋒大獎」</h4>
@@ -109,7 +117,8 @@
     </div>
 
     <div class="container mt-5 px-5">
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-up">
+      <div class="row justify-content-center align-items-center">
+
         <div class="col-md-5" data-aos="fade-right">
           <h3 class="mt-5 mb-4">以人為本</h3>
           <p>
@@ -118,6 +127,7 @@
           </p>
           <img src="assets/about/HR.jpg" alt="About Section Image" class="img-fluid mt-3" data-aos="fade-right">
         </div>
+
         <div class="col-md-5" data-aos="fade-left">
           <h3 class="mt-5 mb-4">環境關懷</h3>
           <p>
@@ -126,6 +136,7 @@
           </p>
           <img src="assets/about/AJA.jpg" alt="About Section Image" class="img-fluid mt-3" data-aos="fade-left">
         </div>
+
         <div class="col-md-5" data-aos="fade-right">
           <h3 class="mt-5 mb-4">夥伴協作</h3>
           <p>
@@ -134,6 +145,7 @@
           </p>
           <img src="assets/about/Diplome.jpg" alt="About Section Image" class="img-fluid mt-3" data-aos="fade-right">
         </div>
+
         <div class="col-md-5" data-aos="fade-left">
           <h3 class="mt-5 mb-4">建造香港</h3>
           <p>
@@ -142,13 +154,14 @@
           </p>
           <img src="assets/about/ICE.jpg" alt="About Section Image" class="img-fluid mt-3" data-aos="fade-left">
         </div>
+
       </div>
     </div>
 
     <!-- 獎項及協會會員 -->
     <div class="container mt-5 px-5 about-data">
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-up">
-        <div class="col" data-aos="fade-up">
+      <div class="row justify-content-center align-items-center" data-aos="fade-left">
+        <div class="col" data-aos="fade-left">
           <h3 class="mt-5 mb-4">獎項清單</h3>
           
           <div class="row justify-content-start g-4">
@@ -455,14 +468,13 @@
             </div>
           </div>
         </div>
-          
-        </div>
+        
       </div>
     </div>
     <!-- 獎項及協會會員 -->
 
     <div class="container mt-5 px-5">
-      <div class="row justify-content-center align-items-center content-section" data-aos="fade-up">
+      <div class="row justify-content-center align-items-center">
         <div class="col-md-4">
           <h3 class="mt-5 mb-4">聯絡我們</h3>
           <p>
@@ -482,9 +494,10 @@
             <br>QR code會在之後更新
           </p>
         </div>
-        <div class="col-md-6">
-          <p>Google Map</p>
-      </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.47153843626387!2d114.1727325940441!3d22.277701811413294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005c8835a8d5%3A0xa747e31e146152a8!2z5Lit5ZyL5bu656-J5bel56iLKOmmmea4rynmnInpmZDlhazlj7g!5e0!3m2!1szh-TW!2shk!4v1747320517669!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center">
