@@ -39,6 +39,22 @@ img {
     margin: 0 0;
 }
 
+.p-red {
+    color: var(--p-red);
+}
+
+.e-green {
+    color: var(--e-green);
+}
+
+.a-blue {
+    color: var(--a-blue);
+}
+
+.k-orange {
+    color: var(--k-orange);
+}
+
 /* 2. 導航欄樣式 */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95) !important;
@@ -368,7 +384,7 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 .social-icons a {
@@ -623,10 +639,6 @@ footer {
 
 .data-area-bg {
     background-color: rgba(100, 255, 218, 0.1);
-}
-
-.no-transform {
-  transform: none!important;
 }
 
 .gradient-text {

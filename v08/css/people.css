@@ -30,3 +30,11 @@
 .content-section h6 {
   color: var(--gold-accent);
 }
+
+.gif-icon img {
+  box-shadow: none!important;
+}
+
+.gif-icon img:hover  {
+  transform: none!important;
+}
