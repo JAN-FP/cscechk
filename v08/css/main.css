@@ -651,6 +651,7 @@ footer {
 .peak-gif {
     margin: 1rem 1rem!important;
     box-shadow: none!important;
+    width: 600px!important;
 }
 
 .peak-gif:hover {
