@@ -125,7 +125,7 @@ a {
 
 /* Styling for each mini card */
 .mini-card-grid .mini-card {
-  min-width: 400px;
+  min-width: 360px;
   min-height: var(--mini-card-min-size);
   box-shadow: -2rem 0 3rem -2rem #000;
   padding: var(--card-padding);
@@ -140,7 +140,7 @@ a {
 
 /* Mini card spacing except for the first one */
 .mini-card-grid .mini-card:not(:first-child) {
-  margin-left: -200px;
+  margin-left: -180px;
   box-shadow: -3rem 0 3rem -2rem #000;
 }
 
