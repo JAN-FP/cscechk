@@ -35,6 +35,15 @@ p {
     margin: 0.5rem 0;
 }
 
+small {
+    font-size: 0.75rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--white);
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
 img {
     margin: 0 0;
 }
@@ -651,7 +660,7 @@ footer {
 .peak-gif {
     margin: 1rem 1rem!important;
     box-shadow: none!important;
-    width: 600px!important;
+    width: 540px!important;
 }
 
 .peak-gif:hover {

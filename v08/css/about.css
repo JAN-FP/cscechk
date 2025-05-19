@@ -18,3 +18,7 @@
         min-height: auto !important;
     }
 }
+
+.img-award {
+    max-height: 280px; /* 調整圖標大小 */
+}
