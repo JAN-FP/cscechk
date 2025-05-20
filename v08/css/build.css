@@ -302,3 +302,11 @@
 .build-container-bg {
   background-color: #b3b3b321;
 }
+
+.project-content {
+  font-size: 1.2rem;
+}
+
+.project-content .counter {
+  font-size: 2rem;
+}
