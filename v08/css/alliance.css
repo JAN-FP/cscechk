@@ -122,3 +122,11 @@
 .stat-card:hover {
   transform: translateY(-5px);
 }
+
+.flow-icon img{
+  box-shadow: none!important;
+}
+
+.flow-icon:hover img{
+  transform: none!important;
+}

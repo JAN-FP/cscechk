@@ -310,3 +310,28 @@
 .project-content .counter {
   font-size: 2rem;
 }
+
+.text-bg01 {
+  display: block;  /* 改為區塊元素 */
+  background: linear-gradient(90deg, #d3910f 0%, rgba(211, 145, 15, 0.7) 80%, rgba(211, 145, 15, 0) 100%);
+  color: #fff;
+  padding: 0.25rem 2rem 0.25rem 0.75rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+  line-height: 1.2;
+  width: fit-content;  /* 寬度隨內容調整 */
+  clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0% 100%);
+  margin-bottom: 0.5rem;  /* 添加下邊距 */
+}
+
+.text-bg02 {
+  display: block;  /* 改為區塊元素 */
+  background-color: var(--k-orange);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  width: fit-content;  /* 寬度隨內容調整 */
+}
