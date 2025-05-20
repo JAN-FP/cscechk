@@ -298,3 +298,7 @@
 .icon-award {
   max-height: 90px; /* 調整圖標大小 */
 }
+
+.build-container-bg {
+  background-color: #b3b3b321;
+}
