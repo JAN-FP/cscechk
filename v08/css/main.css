@@ -662,9 +662,9 @@ footer {
 }
 
 .peak-gif {
-    margin: 1rem 1rem!important;
+    margin: 0rem 0rem!important;
     box-shadow: none!important;
-    width: 540px!important;
+    width: 530px!important;
 }
 
 .peak-gif:hover {
