@@ -1,0 +1,31 @@
+/* 外層包裹 div 的樣式（可根據需求調整） */
+.about-header-wrapper {
+    background-color: #8e8e8e37; /* 淺灰色背景 */
+    padding: 2rem 0; /* 上下內距 2rem，左右保持 0（避免與 container 內距重疊） */
+    margin: 1rem 0; /* 上下外距 1rem */
+}
+
+.about-data .card {
+    --bs-card-bg: var(--secondary-color)!important;
+}
+
+.about-data .card-title {
+    color: #f39c12ab;
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem!important;
+    text-shadow:none!important;
+}
+
+.about-data .card-text {
+    font-size: 0.8rem !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: auto !important;
+    }
+}
+
+.img-award {
+    max-height: 280px; /* 調整圖標大小 */
+}

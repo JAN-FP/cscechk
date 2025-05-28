@@ -1,0 +1,144 @@
+.hero-section {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .hero-cards-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+.network-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  @media (max-width: 768px) {
+    .network-container {
+      height: 90vh;
+    }
+  }
+
+.node {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(100, 255, 218, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0a192f;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+  z-index: 2;
+}
+
+.node.main {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(212, 175, 55, 0.9);
+  color: white;
+  font-size: 1.2rem;
+  z-index: 3;
+}
+
+.node.secondary {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(100, 255, 218, 0.9);
+  font-size: 1rem;
+}
+
+.connection {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(100, 255, 218, 0.5);
+  transform-origin: left center;
+  z-index: 1;
+}
+
+.pulse {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(100, 255, 218, 0.3);
+  transform-origin: center;
+  z-index: 1;
+}
+
+.node-label {
+  position: absolute;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 120px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.node:hover + .node-label {
+  opacity: 1;
+}
+
+.title-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #64ffda;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#icon-alliance h4 {
+  min-height: 4rem;
+}
+
+#icon-alliance p {
+  text-align: center;
+}
+
+/* 質量管理與商業道德區域動畫相關樣式 */
+.icon-animate {
+  display: inline-block;
+}
+
+.stat-card {
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.flow-icon img{
+  box-shadow: none!important;
+}
+
+.flow-icon:hover img{
+  transform: none!important;
+}
+
+.flow-icon p {
+  text-align: center;
+}

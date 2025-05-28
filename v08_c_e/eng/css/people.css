@@ -1,0 +1,68 @@
+.grid-item-large {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.15) 0%, rgba(0, 255, 179, 0.1) 100%);
+  backdrop-filter: blur(5px);
+}
+
+.stat-card {
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+/* 確保所有統計卡片的標題高度一致 */
+.stat-card h4 {
+  min-height: 8rem; /* 根據最長的標題設置最小高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* 確保數字區域高度一致 */
+.stat-card .counter-number {
+  min-height: 3.5rem; /* 給數字區域一個固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* 確保單位文字對齊 */
+.stat-card p:last-child {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* .content-section {
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.08);
+} */
+
+.content-section h2 {
+  color: var(--p-red);
+}
+
+.content-section h6 {
+  color: var(--gold-accent);
+}
+
+.gif-icon img {
+  box-shadow: none!important;
+}
+
+.gif-icon img:hover  {
+  transform: none!important;
+}
+
+.gif-icon p {
+  text-align: center;
+}
