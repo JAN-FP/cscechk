@@ -670,3 +670,9 @@ footer {
 .peak-gif:hover {
     transform: none!important;
 }
+
+.img-100w {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
