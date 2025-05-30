@@ -145,6 +145,25 @@ a {
   box-shadow: -3rem 0 3rem -2rem #000;
 }
 
+/* 手機螢幕樣式 */
+@media (max-width: 768px) {
+  .mini-card-grid {
+    flex-direction: column;
+    padding: 1rem;
+    overflow-x: visible;
+  }
+  
+  .mini-card-grid .mini-card {
+    min-width: 100%;
+    margin: 0 0 1rem 0 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .mini-card-grid .mini-card:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
 /* Styling for the time inside mini cards */
 .mini-card-grid .mini-card time {
   display: block;
