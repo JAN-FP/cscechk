@@ -293,6 +293,14 @@
   .slider-content p {
     font-size: 1rem;
   }
+
+  .text-bg01 {
+    font-size: 0.7rem;
+  }
+
+  .text-bg02 {
+    font-size: 0.8rem;
+  }
 }
 
 .icon-award {

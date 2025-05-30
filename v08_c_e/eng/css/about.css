@@ -11,13 +11,13 @@
 
 .about-data .card-title {
     color: #f39c12ab;
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 0.5rem!important;
     text-shadow:none!important;
 }
 
 .about-data .card-text {
-    font-size: 0.8rem !important;
+    font-size: 0.6rem !important;
 }
 
 @media (max-width: 768px) {
@@ -28,4 +28,13 @@
 
 .img-award {
     max-height: 280px; /* 調整圖標大小 */
+}
+
+.qr-code {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.qr-code:hover {
+    transform: none!important;
 }

@@ -34,7 +34,7 @@ p {
     line-height: 1.3;
     margin: 0.5rem 0;
     font-size: 1rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 small {
@@ -405,6 +405,10 @@ footer {
     margin-top: 0.5rem;
 }
 
+.social-icons p {
+    font-size: 0.8rem;
+}
+
 .social-icons a {
     display: flex;
     align-items: center;
@@ -676,8 +680,10 @@ footer {
     transform: none!important;
 }
 
-.image-caption small {
+.image-caption {
     line-height: 1.2 !important;
     display: inline-block;
     width: 100%;
+    text-align: center!important;
+    display: block;
 }
