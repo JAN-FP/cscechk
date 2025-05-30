@@ -109,7 +109,7 @@ a {
 /* Title inside the header card */
 .header-card-title {
   font-weight: 800;
-  font-size: 25px;
+  font-size: 2rem;
   line-height: 1.1;
   margin-bottom: 16px;
 }
@@ -153,7 +153,7 @@ a {
 
 /* Title inside the mini card */
 .mini-card-grid .mini-card-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0 0 1rem 0;
   font-weight: 800;
   letter-spacing: 0.03rem;
@@ -191,7 +191,7 @@ a {
   height: 200px;      /* 固定高度 */
   overflow: auto;     /* 內容過多時可滾動 */
   color: #c0bb79;
-  font-size: 14px;
+  font-size: 0.8rem;
   padding: 1rem 0;    /* 調整內邊距 */
   margin-bottom: 1rem; /* 增加底部間距 */
 }
@@ -209,7 +209,7 @@ a {
 /* 列表項目間距 */
 .mini-card-description li {
   margin-bottom: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .mini-card-description li:last-child {
