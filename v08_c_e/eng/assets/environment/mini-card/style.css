@@ -151,16 +151,20 @@ a {
     flex-direction: column;
     padding: 1rem;
     overflow-x: visible;
+    transform: none !important; /* 取消網格容器的變形 */
   }
   
   .mini-card-grid .mini-card {
     min-width: 100%;
     margin: 0 0 1rem 0 !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transform: none !important; /* 取消卡片的變形 */
+    transition: none !important; /* 取消過渡效果 */
   }
   
   .mini-card-grid .mini-card:not(:first-child) {
     margin-left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* 統一陰影效果 */
   }
 }
 
