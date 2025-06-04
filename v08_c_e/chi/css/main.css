@@ -394,6 +394,10 @@ footer {
     margin-top: 50px;
 }
 
+footer p {
+    font-size: 0.8rem;
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
@@ -563,6 +567,10 @@ footer {
     .hero-cards-container {
         padding: 10px;
         margin-top: 0px;
+    }
+
+    footer p {
+        font-size: 0.5rem;
     }
 }
 
